@@ -9,13 +9,13 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 mongoose.connect('mongodb+srv://instagram:instagram@cluster0-jyzei.mongodb.net/test?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
+  useNewUrlParser: true,
 });
 
 app.use((req, res, next) => {
-    req.io = io;
+  req.io = io;
 
-    next();
+  next();
 });
 
 app.use(cors());
