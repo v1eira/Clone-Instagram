@@ -1,7 +1,7 @@
 # Clone-Instagram
 An Instagram-like app
 
-Environment:
+## Environment
 - OS: [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
 - Node.js v10.x: <br>
     `` $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - `` <br>
@@ -27,6 +27,7 @@ Environment:
     `` $ sudo apt-get update `` <br>
     `` $ sudo apt-get install insomnia ``
 
+## Tools
 Inside the backend folder:
 - `` $ yarn add express ``
 - `` $ yarn add mongoose ``
@@ -47,6 +48,16 @@ To use the camera on Android:
 - `` $ yarn add react-native-image-picker ``
 - `` $ react-native link react-native-image-picker ``
 - Then, follow [this](https://github.com/react-native-community/react-native-image-picker/blob/master/docs/Install.md)
+
+## Running the app:
+Start the server on the ``backend`` folder: <br>
+``$ yarn dev``
+
+Run the frontend at the ``frontend`` folder: <br>
+``$ yarn start``
+
+To run the mobile version, go to the ``instarocket`` folder and do: <br>
+``$ react-native run-android``
 
 Here is how it looks:
 
