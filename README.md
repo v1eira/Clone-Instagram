@@ -1,4 +1,4 @@
-# Clone-Instagram
+# Clone-Instagram <img src="mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" height="40px"/>
 An Instagram-like app
 
 ## Environment
@@ -69,6 +69,10 @@ Here is how it looks:
 
 #### Mobile
 
-![mobile-feed](/img/mobile-feed.jpg) <br><br>
+<p align="center">
+    <img src="img/mobile-feed.png"/>
+</p>
 
-![mobile-new](/img/mobile-new.jpg)
+<p align="center">
+    <img src="img/mobile-new.png"/>
+</p>
