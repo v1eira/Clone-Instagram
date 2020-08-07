@@ -1,73 +1,59 @@
-# Clone-Instagram <img src="mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" height="40px"/>
-An Instagram-like app
+# Clone-Instagram <img src="mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" height="30px"/>
 
-## Environment
-- OS: [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
-- Node.js v10.x: <br>
-    `` $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - `` <br>
-    `` $ sudo apt-get install -y nodejs ``
-- Yarn: <br>
-    `` $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - ``
+> A clone of Instagram made using React
 
-    `` $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list ``
+---
 
-    `` $ sudo apt update `` <br>
-    `` $ sudo apt install --no-install-recommends yarn `` <br>
+# :wrench: Stack
 
-- Insomnia: <br>
-    `` # Add to sources `` <br>
-    `` $ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \ `` <br>
-    `` $ | sudo tee -a /etc/apt/sources.list.d/insomnia.list ``
+This project was created using [Express](https://expressjs.com/), [Socket.IO](https://socket.io/), [React](https://reactjs.org/) and [React Native](https://reactnative.dev/). The database used was [MongoDB](https://www.mongodb.com/).
 
-    `` # Add public key used to verify code signature `` <br>
-    `` $ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \ `` <br>
-    `` $ | sudo apt-key add - ``
+# :construction_worker: Installation
 
-    `` # Refresh repository sources and install Insomnia `` <br>
-    `` $ sudo apt-get update `` <br>
-    `` $ sudo apt-get install insomnia ``
+**Once you have [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) installed, install the dependencies by running inside each folder:**
 
-## Tools
-Inside the backend folder:
-- `` $ yarn add express ``
-- `` $ yarn add mongoose ``
-- `` $ yarn add sharp ``
-- `` $ yarn add cors ``
+```bash
+$ yarn
+```
 
-Inside the frontend folder:
-- `` $ yarn add react-router-dom ``
-- `` $ yarn add socket.io-client ``
+**Setup the API**
 
-I used my phone to emulate the app, so:
-- `` $ npm install -g react-native cli ``
-- `` $ yarn add react-navigation react-native-gesture-handler ``
-- `` $ react-native link react-native-gesture-handler ``
-- `` $ react-native run-android ``
+To start the server, inside the ```backend``` folder run:
 
-To use the camera on Android:
-- `` $ yarn add react-native-image-picker ``
-- `` $ react-native link react-native-image-picker ``
-- Then, follow [this](https://github.com/react-native-community/react-native-image-picker/blob/master/docs/Install.md)
+```bash
+$ yarn dev
+```
 
-## Running the app:
-Start the server on the ``backend`` folder: <br>
-``$ yarn dev``
+# :rocket: Running the app
 
-Run the frontend at the ``frontend`` folder: <br>
-``$ yarn start``
+After doing the previous steps, inside the ```frontend``` folder run:
 
-To run the mobile version, go to the ``instarocket`` folder and do: <br>
-``$ react-native run-android``
+```bash
+$ yarn start
+```
 
-Here is how it looks:
+To run the mobile version for the first time, go to the ```mobile``` folder and do:
 
-#### Web
+```bash
+$ react-native run-android
+```
 
-![frontend-feed](/img/frontend-feed.png) <br><br>
+If you have already ran the app before, just enter:
 
-![frontend-new](/img/frontend-new.png) <br><br>
+```bash
+$ react-native start
+```
 
-#### Mobile
+# :memo: License
+
+This project is under the [MIT license](https://github.com/v1eira/clone-instagram/blob/master/LICENSE).
+
+# :computer: Web
+
+![frontend-feed](/img/frontend-feed.png)
+![frontend-new](/img/frontend-new.png)
+
+# :iphone: Mobile
 
 <p align="center">
     <img src="img/mobile-feed.png"/>
